@@ -1,0 +1,31 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    color: #7F5539;
+    text-align: center;
+    font-size: 50px;
+    font-family: Georgia;
+    border:#7F5539;
+}
+
+.p1 {
+    color: #7F5539;
+    text-align: center;
+    font-size:20px;
+    font-family: Tahoma;
+    text-transform: capitalize;
+}
+
+footer {
+    background-color: #7F5539;
+    color: beige;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
