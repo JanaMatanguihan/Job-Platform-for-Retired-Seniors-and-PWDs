@@ -8,60 +8,74 @@
     <title> GABAY </title>
 </head>
 <body>
-
     <header>
         <div class="container">
-            <nav>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="our-logo.png" alt="GABAY" />
+                    <span class="brand-name"> GABAY </span>
+                </div>
+        
+                <ul class="nav-links">
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="about-us.html"> About </a></li>
+                    <li><a href="news.html"> News </a></li>
+                    <li><a href="jobs.html"> Jobs </a></li>
+                    <li><a href="application-form.html"> Apply Now </a></li>
+                </ul>
+            </nav>
+        
+           <!--<nav>
                 <ul>
                     <li><a href="#home"> Home </a></li>
                     <li><a href="jobs.html"> Jobs </a></li>
                     <li><a href="news.html"> News </a></li>
-                    <li><a href="about-us.html"> About </a></li>
                     <li><a href="application-form.html"> Apply Now </a></li>
                 </ul>
-            </nav>
+            </nav>-->
         </div>
     </header>
-
-    <main>
-        <section class="hero" id="home">
-            <div class="container">
-                <h1> Job Listings </h1>
-                <p> Discover meaningful job opportunities and celebrate accomplishments </p>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search for jobs...">
-                    <button> Search </button>
+    
+    <div class="content">
+        <main>
+            <section class="hero" id="home">
+                <div class="container">
+                    <h1> Job Listings </h1>
+                    <p> Discover meaningful job opportunities and celebrate accomplishments </p>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search for jobs...">
+                        <button> Search </button>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section" id="jobs">
-            <div class="container">
-                <h2> Featured Job Listings </h2>
-                <div class="job-listings">
+            <section class="section" id="jobs">
+                <div class="container">
+                    <h2> Featured Job Listings </h2>
+                    <div class="job-listings">
+                        <div class="card">
+                           <h3> <a href="news1.html" style="text-decoration: none; color: inherit;" >McDonald's hiring elderly, PWDs of Manila </a></h3>
+                            <p> Author: Ferdinand Patinio </p>
+                        </div>
 
-                    <div class="card">
-                        <h3> McDonald's hiring elderly, PWDs of Manila </h3>
-                        <p> Author: Ferdinand Patinio </p>
-                        
+                        <div class="card">
+                            <h3> <a href='news2.html' style="text-decoration: none; color: inherit;" >Philippines offers jobs to senior citizens, PWDs </a></h3>
+                            <p> Author: Joseph Peter Calleja </p>
+                        </div>
+
+                        <div class="card">
+                            <h3> <a href='news3.html' style="text-decoration: none; color: inherit;" >More job opportunities for disabled workers</a></h3>
+                            <p> Author:  Claire Lee </p>
+                        </div>
                     </div>
-
-                    <div class="card">
-                        <h3> Philippines offers jobs to senior citizens, PWDs </h3>
-                        <p> Author: Joseph Peter Calleja </p>
-                    
-                    </div>
-
-                    <div class="card">
-                        <h3> More job opportunities for disabled workers </h3>
-                        <p> Author:  Claire Lee </p>
-                       
-                    </div>
-
                 </div>
-            </div>
-        </section>
-        
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p><i> 2024 Project in Advanced Computer Programming. All Rights Reserved. </i></p>
+    </footer>
 </body>
 </html>
 
