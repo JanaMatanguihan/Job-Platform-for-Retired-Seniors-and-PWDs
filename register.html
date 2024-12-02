@@ -1,0 +1,123 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $response = [];
+
+    // Capture and validate form data
+    $email = $_POST['email'] ?? '';
+    $password = $_POST['password'] ?? '';
+    $confirm_password = $_POST['confirm_password'] ?? '';
+
+    if (!empty($email) && !empty($password) && !empty($confirm_password)) {
+        if ($password === $confirm_password) {
+            // Registration successful
+            $response = [
+                'status' => 'success',
+                'message' => 'Registration successful! Redirecting to the homepage.',
+            ];
+        } else {
+            $response = [
+                'status' => 'error',
+                'message' => 'Passwords do not match.',
+            ];
+        }
+    } else {
+        $response = [
+            'status' => 'warning',
+            'message' => 'Please fill in all fields.',
+        ];
+    }
+
+    // Return JSON response
+    header('Content-Type: application/json');
+    echo json_encode($response);
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="register.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <title> Register to GABAY </title>
+    </head>
+
+<body>
+
+    <div class="logo">
+        <img src="our-logo.png" alt="GABAY"/>
+    </div>
+
+    <div class="application">
+        <form id="registerForm">
+            <h1> Register </h1>
+
+            <div class="input-box">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Enter Password Again" required>
+            </div>
+
+            <div class="remember-me">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+            
+            <div class="login">
+                <button type="submit" class="button">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(this);
+
+            fetch('register.php', {
+                method: 'POST',
+                body: formData,
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        Swal.fire({
+                            title: 'Success!',
+                            text: data.message,
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        }).then(() => {
+                            window.location.href = 'homepage.html'; // Redirect on success
+                        });
+                    } else {
+                        Swal.fire({
+                            title: data.status === 'warning' ? 'Warning!' : 'Error!',
+                            text: data.message,
+                            icon: data.status,
+                            confirmButtonText: 'Try Again'
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Something went wrong. Please try again.',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+                });
+        });
+    </script>
+</body>
+</html>
