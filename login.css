@@ -10,9 +10,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #7F5539;
+    background-color: #8d5730;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+   
 .application {
     width: 420px;
     background: transparent;
