@@ -27,7 +27,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #553725;
+    background-color: #A45C40;
     padding: 10px 20px;
     color: #E5D4C3;
 }
@@ -38,7 +38,7 @@ a:hover {
 }
 
 .logo img {
-    width: 80px;
+    width: 100px;
     height: auto;
     margin-right: 10px;
 }
@@ -46,7 +46,7 @@ a:hover {
 .logo .brand-name {
     font-size: 28px;
     font-weight: bold;
-    color: #E5D4C3;
+    color: #F6EEE0;
 }
 
 .nav-links {
@@ -71,14 +71,14 @@ a:hover {
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .home {
-    background-color: #f0ece8;
+    background-color: #F6EEE0;
     text-align: center;
     padding: 48px 0;
 }
@@ -100,7 +100,7 @@ a:hover {
 
 .search-bar button {
     padding: 8px 16px;
-    background-color: #553725;
+    background-color: #A45C40;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -137,7 +137,7 @@ a:hover {
 }
 
 footer {
-    background-color: #553725;
+    background-color: #A45C40;
     color: #fff;
     text-align: center;
     padding: 16px 0;
