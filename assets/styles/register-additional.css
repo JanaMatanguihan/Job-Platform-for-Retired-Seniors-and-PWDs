@@ -1,0 +1,74 @@
+.error-message {
+    color: #ff3333;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: none;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.user-type {
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 40px;
+}
+
+.user-type label {
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.user-type input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.application {
+    backdrop-filter: blur(30px);
+}
+
+.input-box i {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.button:hover {
+    background: #DDB892;
+    color: white;
+    transition: 0.3s;
+}
+
+/* SweetAlert Custom Styling */
+.swal-modal {
+    background-color: #7F5539;
+}
+
+.swal-title {
+    color: white;
+}
+
+.swal-text {
+    color: #E6CCB2;
+}
+
+.swal-button {
+    background-color: #DDB892;
+    color: #7F5539;
+}
+
+.swal-button:hover {
+    background-color: #B08968 !important;
+    color: white;
+} 
