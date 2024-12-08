@@ -4,76 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Edit Profile </title>
-    <link rel="stylesheet" href="edit-profile.css">
+    <link rel="stylesheet" href="../assets/styles/edit-profile.css">
 </head>
 <body>
 
     <section class="container">
 
         <header><b> Edit your profile </b></header>
-        <form action="../backend/submit.php" class="form" method="POST">
+        <form>
 
             <div class="logo">
                 <img src="../assets/photos/black-logo.png" alt="logo">
             </div>
 
             <div class="input-box">
-                <label class="header"> Enter your Full Name </label>
+                <label> Enter your Full Name </label>
                 <input type="text" name="fullName" placeholder="Full Name" required>
             </div>
-
-            <div class="input-box">
-              <label class="header"> Enter your Email </label>
-                <input type="email" name="email" placeholder="Email" required>
-            </div>
-
-            <div class="input-box">
-              <label class="header"> Tell us about yourself: </label>
-              <input type="text" name="biography" placeholder="Short Biography" required>
-            </div>
-
+            <label for="name"> Name: </label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="biography"> Short Biography: </label>
+            <textarea id="biography" name="biography"></textarea>
+          
             <fieldset>
-              <label class="header"> Work Experience </label>
-
-              <div class="input-box">
-                <label> Job Title: </label>
-                <input type="text" id="job-title" name="jobTitle" placeholder="Job Title" required>
+              <legend> Work Experience: </legend>
+              <div class="work-experience">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title">
                 
-                <label> Company Name: </label>
-                <input type="text" id="company-name" name="companyName" placeholder="Company Name" required>
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company-name">
                 
-                <label> Start Date: </label>
-                <input type="date" id="start-date" name="startDate">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
                 
-                <label> End Date: </label>
-                <input type="date" id="end-date" name="endDate">
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date">
+                
+                <label for="responsibilities">Responsibilities:</label>
+                <textarea id="responsibilities" name="responsibilities"></textarea>
               </div>
-
             </fieldset>
           
             <fieldset>
-              <label class="header"> Educational Attainment </label>
-
-              <div class="input-box">
-                <label> Degree: </label>
-                <input type="text" id="degree" name="degree" placeholder="Degree" required>
-                
-                <label> University Name: </label>
-                <input type="text" id="company-name" name="univName" placeholder="University Name" required>
-                
-                <label> Graduation Year::</label>
-                <input type="date" id="grad-year" name="gradYear">
-                
-              </div>
-
+              <legend> Educational Attainment: </legend>
+              <label for="degree">Degree:</label>
+              <input type="text" id="degree" name="degree">
+              
+              <label for="institution">Institution Name:</label>
+              <input type="text" id="institution" name="institution">
+              
+              <label for="graduation-year">Graduation Year:</label>
+              <input type="number" id="graduation-year" name="graduation-year" min="1900" max="2100">
             </fieldset>
-
-            <div class="input-box">
-              <label class="header"> Skill Set: </label>
-              <input type="text" id="skill1" name="skill1" placeholder="Skills" required>
-              <input type="text" id="skill2" name="skill1" placeholder="Skills" required>
-              <input type="text" id="skill3" name="skill1" placeholder="Skills" required>
-            </div>
+          
+            <label for="skills">Skill Set:</label>
+            <select id="skills" name="skills" multiple>
+              <option value="skill1">Skill 1</option>
+              <option value="skill2">Skill 2</option>
+              <option value="skill3">Skill 3</option>
+            </select>
           
             <button type="submit">Save Profile</button>
           </form>
