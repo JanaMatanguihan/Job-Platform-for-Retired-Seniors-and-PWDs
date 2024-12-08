@@ -1,0 +1,203 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* href links */ 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A45C40;
+    padding: 10px 20px;
+    color: #E5D4C3;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F6EEE0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D6AB7D;
+}
+
+/* Dropdown Container */
+.nav-links .dropdown {
+    position: relative;
+}
+
+.nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: -10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 160px;
+    z-index: 10;  /* Ensure dropdown is above other elements */
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+    display: block;  /* Show dropdown on hover */
+}
+
+.nav-links .dropdown-menu li {
+    padding: 8px 12px;
+}
+
+.nav-links .dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links .dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+}
+
+.nav-links .dropdown a i {
+    font-size: 32px;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Profile Section */
+.profile {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.profile .header {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.profile .image {
+    margin-right: 20px;
+}
+
+.profile .image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.profile .information {
+    flex: 1;
+}
+
+.profile .information h1, h2, h3, h4, h5, h6 {
+    font-size: 1.8rem;
+    color: #5c3d2e;
+    margin-bottom: 10px;
+}
+
+.profile .information .info {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Skills Section */
+.profile .skills {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.profile .skills h2 {
+    font-size: 1.5rem;
+    color: #5c3d2e;
+    margin-bottom: 10px;
+}
+
+.profile ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile ul li {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.profile ul li::before {
+    content: "✔";
+    margin-right: 10px;
+    color: #A45C40;
+}
+
+/* Footer */
+footer {
+    background-color: #A45C40;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 32px;
+}

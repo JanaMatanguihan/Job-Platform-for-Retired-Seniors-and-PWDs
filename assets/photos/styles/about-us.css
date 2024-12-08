@@ -1,0 +1,293 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+body {
+
+    line-height: 1.6;
+
+    color: #333;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+/* href links */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #A45C40;
+
+    padding: 10px 20px;
+
+    color: #E5D4C3;
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.logo img {
+
+    width: 100px;
+
+    height: auto;
+
+    margin-right: 10px;
+
+}
+
+
+.logo .brand-name {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #F6EEE0;
+
+}
+
+
+.nav-links {
+
+    list-style: none;
+
+    display: flex;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+.nav-links li {
+
+    margin: 0 40px;
+
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: white;
+
+    transition: color 0.3s;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #D6AB7D;
+
+}
+
+
+section {
+
+    padding: 32px;
+
+    text-align: center;
+
+    background-color:#f3ece5;
+
+}
+
+
+.our-team .id-pics {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 50px;
+
+    margin-top: 20px;
+
+}
+
+
+.our-team .id-pics .member {
+
+    text-align: center;
+
+}
+
+
+.our-team .id-pics img {
+
+    width: 100px;
+
+    height: 100px;
+
+    border-radius: 5%;
+
+    object-fit: cover;
+
+}
+
+
+.our-team .id-pics p {
+
+    margin-top: 8px;
+
+    font-size: 16px;
+
+    color: #60412b;
+
+}
+
+
+.header {
+
+    color: #333;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.goals {
+
+    font-size: 20px;
+
+    color:#333;
+
+    text-align: center;
+
+}
+
+
+.aim {
+
+    font-size: 16px;
+
+    color: #333;
+
+    text-align: center;
+
+}
+
+
+.values {
+
+    font-size: 20px;
+
+    color:#333;
+
+    text-align: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.core {
+
+    font-size: 16px;
+
+    color:#333;
+
+    text-align: center;
+
+    margin-left: 60px;
+
+    margin-right: 60px;
+
+}
+
+
+.core-values {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    gap: 1em;
+
+    margin-top: 1em;
+
+}
+
+
+.mission {
+
+    font-size: 16px;
+
+    color:#333;
+
+    text-align: center;
+
+}
+
+
+footer {
+
+    background-color: #A45C40;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 16px 0;
+
+    margin-top: 32px;
+
+}
